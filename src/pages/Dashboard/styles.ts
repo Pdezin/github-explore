@@ -12,6 +12,9 @@ export const Title = styled.h1`
   line-height: 56px;
 
   margin-top: 80px;
+  @media (max-width: 340px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const Form = styled.form<FormProps>`
@@ -51,6 +54,20 @@ export const Form = styled.form<FormProps>`
       background: ${shade(0.2, "#04d361")};
     }
   }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    input {
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+      border-radius: 5px;
+      padding: 20px;
+    }
+  }
 `;
 
 export const Error = styled.span`
@@ -68,7 +85,6 @@ export const Repositories = styled.div`
     border-radius: 5px;
     width: 100%;
     padding: 24px;
-    display: block;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -106,6 +122,17 @@ export const Repositories = styled.div`
     svg {
       margin-left: auto;
       color: #cbcbd6;
+    }
+  }
+  @media (max-width: 580px) {
+    a {
+      flex-direction: column;
+      gap: 0.8rem;
+
+      p {
+        word-break: break-all;
+        text-overflow: ellipsis;
+      }
     }
   }
 `;
