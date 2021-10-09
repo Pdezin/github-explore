@@ -131,7 +131,6 @@ export const Repositories = styled.div`
 
       p {
         word-break: break-all;
-        text-overflow: ellipsis;
       }
     }
   }
