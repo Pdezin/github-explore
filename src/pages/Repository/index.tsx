@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const Repository = () => {
+const Repository: React.FC = () => {
   return <h1>Repository</h1>;
 };
 
